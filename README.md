@@ -1,134 +1,167 @@
-# Online Retail Store Management System
+# 🛒 Online Retail Store Management System
 
-This Python program is a command-line interface (CLI) for an online retail store management system. It allows administrators, customers, distributors, and NGOs to perform various tasks related to the store's operations.
+A **command-line interface (CLI)** based management system for an online retail store. This system empowers **Administrators**, **Customers**, **Distributors**, and **NGOs** to manage and participate in retail operations efficiently.
 
-## Functionality
+Built with **Python** and backed by a **MySQL** database, this project showcases a comprehensive simulation of inventory control, sales tracking, user engagement, and distribution management.
 
-### Admin Functionalities
+---
 
-1. **View Quarterly Sales of Each Category**: Provides sales data for each product category on a quarterly basis.
-2. **View Curated Sales Data for Each Category**: Displays curated sales data for each product category.
-3. **View Top 5 Customers (based on money spent)**: Lists the top 5 customers based on their total spending.
-4. **Data of Items in the Inventory for Each Storage Type**: Shows the inventory items categorized by storage type.
-5. **Add Category**: Allows adding a new product category.
-6. **View All Categories**: Displays all available product categories.
-7. **View Ratings of Top 10 Delivery Partners and Wages**: Shows the ratings and wages of the top 10 delivery partners.
-8. **View Incomplete Orders and Status**: Lists all incomplete orders and their current status.
-9. **View Products and Change Quantity in Inventory**: Displays products and allows modifying their quantities in the inventory.
-10. **Assign a Delivery Partner to Deliver Order**: Assigns a delivery partner to an order.
-11. **Add Product to Inventory**: Adds a new product to the inventory.
-12. **Remove a Product from Inventory**: Removes a product from the inventory.
-13. **Run Automated Tests**: Runs automated tests for the inventory and order management system.
+## 🚀 Features
 
-### Customer Functionalities
+### 👩‍💼 Admin Panel
 
-1. **Add Products to Cart**: Allows customers to browse and add products to their shopping cart.
-2. **View Cart**: Displays the contents of the customer's shopping cart.
-3. **Proceed to Checkout**: Initiates the checkout process for the customer's order, including payment and donation options.
-4. **View Order History**: Shows the customer's order history and status.
+Admins have full control over the store’s backend operations, including inventory, order management, customer tracking, and performance analysis.
 
-### Distributor Functionalities
+* 📈 View **Quarterly Sales** per product category
+* 🗃️ View **Curated Sales Data** for deeper insights
+* 🥇 Identify **Top 5 Customers** based on total spending
+* 📦 Inspect **Inventory by Storage Type**
+* ➕ **Add & View Categories** to expand the product base
+* 🚚 View **Top 10 Delivery Partners' Ratings & Wages**
+* 📋 Track **Incomplete Orders and Their Status**
+* 🔧 **Modify Inventory Quantities** and manage product availability
+* 📤 **Assign Delivery Partners** to pending orders
+* 🛒 **Add or Remove Products** from inventory
+* 🧪 **Run Automated Tests** for validation of the order and inventory modules
 
-1. **View Products You Distribute**: Lists the products that a distributor is responsible for distributing.
-2. **Add a New Product**: Allows a distributor to add a new product to their distribution list.
+### 🧍 Customer Dashboard
 
-### NGO Data
+Customers can seamlessly explore, purchase, and track their orders.
 
-Displays information about the NGOs associated with the online retail store, including their IDs, names, registration numbers, and funds raised.
+* 🛍️ **Add Products to Cart**
+* 👀 **View Cart Contents**
+* 💳 **Checkout with Donations** to NGOs
+* 📜 **Track Order History** and status updates
 
+### 🏢 Distributor Access
 
-## Contributing
+Distributors can manage the products they supply.
 
-1. Vipul Mishra
-2. Namit Jain
-3. Ayush Singhal
+* 📋 **View Distributed Products**
+* ➕ **Add New Products** for distribution
 
+### 🧡 NGO Insights
 
+A transparent display of partnered NGOs.
 
+* 🔍 View **NGO ID, Name, Registration No., and Funds Raised**
 
-## Installation
+---
 
-1. Clone the repository:
+## 🧑‍💻 Contributing Team
 
-```
+* **Vipul Mishra**
+* **Namit Jain**
+* **Ayush Singhal**
+
+---
+
+## 🛠️ Installation Guide
+
+### Step 1: Clone the Repository
+
+```bash
 git clone https://github.com/namit22315/ONLINE-STORE-MANAGEMENT.git
-```
-
-2. Install the required dependencies:
-
-```
-pip install mysql.connector tabulate tqdm
-```
-
-3. Set up the database:
-   - Create a MySQL database named `online retail store`.
-   - Import the provided SQL schema to create the necessary tables.
-
-4. Update the database connection details in `CLI.py`:
-
-```python
-cnx = mysql.connector.connect(user='your_username', password='your_password', host='localhost', port='3306', database='online retail store')
-```
-
-## Usage
-
-1. Navigate to the project directory:
-
-```
 cd ONLINE-STORE-MANAGEMENT
 ```
 
-2. Run the main script:
+### Step 2: Install Python Dependencies
 
+```bash
+pip install mysql.connector tabulate tqdm
 ```
+
+### Step 3: Set Up MySQL Database
+
+1. Create a MySQL database named:
+
+   ```
+   online retail store
+   ```
+2. Import the provided SQL schema to generate necessary tables.
+
+### Step 4: Configure Database Credentials
+
+Open `CLI.py` and update your MySQL credentials:
+
+```python
+cnx = mysql.connector.connect(
+    user='your_username',
+    password='your_password',
+    host='localhost',
+    port='3306',
+    database='online retail store'
+)
+```
+
+---
+
+## ▶️ Running the Application
+
+```bash
 python CLI.py
 ```
 
-3. Follow the on-screen instructions to interact with the CLI menu and perform various tasks.
+Follow the interactive CLI prompts to log in as Admin, Customer, Distributor, or explore NGO data.
 
+---
 
+## 📁 Project Structure
 
-## Code Structure
+```plaintext
+ONLINE-STORE-MANAGEMENT/
+│
+├── Admin/                  # Admin-related functions and modules
+├── ScreenShots/           # Interface screenshots for reference
+├── CLI.py                 # Main interface script
+├── order_fixer.py         # Order correction logic
+├── check_products.py      # Product validation module
+└── README.md              # This file
+```
 
-- `CLI.py`: The main script that runs the command-line interface.
-- `Admin/`: Directory containing modules for various admin functionalities.
-- `order_fixer.py`: Module for managing and fixing orders.
-- `check_products.py`: Module for checking and validating products.
+---
 
-## Documentation
+## 📚 Documentation
 
-For detailed documentation on the code structure, functions, and their usage, please refer to the docstrings and comments within the source code files.
+Code is well-documented with **inline comments** and **docstrings** explaining the purpose and usage of each function and module. Start with `CLI.py` for a top-down understanding.
 
-## Acknowledgments
+---
 
-- [mysql.connector](https://dev.mysql.com/doc/connector-python/en/) - MySQL driver for Python
-- [tabulate](https://pypi.org/project/tabulate/) - Library for pretty-printing tabular data
-- [tqdm](https://pypi.org/project/tqdm/) - Library for creating progress bars
+## 🧩 Dependencies
 
-## Github Link
-https://github.com/namit22315/ONLINE-STORE-MANAGEMENT
+| Package           | Description                    |
+| ----------------- | ------------------------------ |
+| `mysql.connector` | Python-MySQL interface         |
+| `tabulate`        | Tabular display for CLI tables |
+| `tqdm`            | CLI-based progress bars        |
 
+---
 
-## Screenshots
+## 🔗 GitHub Repository
 
-Here are some screenshots of the interface:
+[🔗 ONLINE-STORE-MANAGEMENT (GitHub)](https://github.com/namit22315/ONLINE-STORE-MANAGEMENT)
 
-### Main Menu
-![Main Menu](ScreenShots/main_menu.png)
+---
 
-### Admin Login
-![Admin Login](ScreenShots/admin_menu.png)
+## 📸 Screenshots
 
-### User menu
-![Customer Cart](ScreenShots/user_menu.png)
+| Interface                 | Screenshot                                       |
+| ------------------------- | ------------------------------------------------ |
+| **Main Menu**             | ![Main Menu](ScreenShots/main_menu.png)          |
+| **Admin Menu**            | ![Admin Menu](ScreenShots/admin_menu.png)        |
+| **Customer Dashboard**    | ![User Menu](ScreenShots/user_menu.png)          |
+| **Shopping Cart**         | ![Cart](ScreenShots/user_cart.png)               |
+| **Payment Screen**        | ![Payment](ScreenShots/payment_screen.png)       |
+| **Distributor Dashboard** | ![Distributor](ScreenShots/Distributor_Menu.png) |
 
-### User Cart and product categories
-![Customer Cart](ScreenShots/user_cart.png)
+---
 
-### Payment Screen
-![Customer Cart](ScreenShots/payment_screen.png)
+## 🤝 Future Improvements (Suggestions)
 
-### Distibutor Menu
-![Customer Cart](ScreenShots/Distributor_Menu.png)
+* Web-based GUI using Flask/Django
+* Integration with payment gateways
+* Advanced analytics dashboards
+* Role-based access with authentication layers
+* Real-time inventory alerts via email/SMS
 
-
+---
