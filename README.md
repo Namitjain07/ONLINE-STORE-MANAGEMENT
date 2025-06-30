@@ -1,5 +1,8 @@
 # 🛒 Online Retail Store Management System
+
 ![ER Diagram](ScreenShots/er_diagram.png)
+
+🔗 [View ER Diagram on Lucidchart](https://lucid.app/lucidchart/e99e3d7a-eb15-45c3-9796-857bfa48254a/edit?viewport_loc=-250%2C11%2C3091%2C1708%2C0_0&invitationId=inv_05e20e10-c84e-4859-9f11-9c474417d553)
 
 A **command-line interface (CLI)** based management system for an online retail store. This system empowers **Administrators**, **Customers**, **Distributors**, and **NGOs** to manage and participate in retail operations efficiently.
 
