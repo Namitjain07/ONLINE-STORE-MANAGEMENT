@@ -1,5 +1,6 @@
 # 🛒 Online Retail Store Management System
 ![ER Diagram](ScreenShots/er_diagram.png)
+
 A **command-line interface (CLI)** based management system for an online retail store. This system empowers **Administrators**, **Customers**, **Distributors**, and **NGOs** to manage and participate in retail operations efficiently.
 
 Built with **Python** and backed by a **MySQL** database, this project showcases a comprehensive simulation of inventory control, sales tracking, user engagement, and distribution management.
