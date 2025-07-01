@@ -10,6 +10,15 @@ Built with **Python** and backed by a **MySQL** database, this project showcases
 
 ---
 
+## 📽️ Demo Video
+
+[![Watch the Demo](https://img.youtube.com/vi/vkty0VDYbaU/0.jpg)](https://youtu.be/vkty0VDYbaU)
+
+🔗 [Click here to watch the demo on YouTube](https://youtu.be/vkty0VDYbaU)
+
+---
+
+
 ## 🚀 Features
 
 ### 👩‍💼 Admin Panel
@@ -160,7 +169,7 @@ Code is well-documented with **inline comments** and **docstrings** explaining t
 
 ---
 
-## 🤝 Future Improvements (Suggestions)
+## 🤝 Future Improvements
 
 * Web-based GUI using Flask/Django
 * Integration with payment gateways
